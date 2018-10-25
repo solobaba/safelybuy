@@ -40,4 +40,10 @@ dependencies {
     /* Needed for binding view with id */
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //ScreenSlide library
+    implementation 'com.daimajia.androidanimations:library:1.0.3@aar'
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
 }

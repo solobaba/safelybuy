@@ -3,7 +3,6 @@ package com.nuturetech.safelybuy.activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 
 import com.nuturetech.safelybuy.R;
 
@@ -20,6 +19,12 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         unbinder = ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.btn_login)
+    public void goToLogin(){
+        startActivity(new Intent(LoginActivity.this, NavigationActivity.class));
+        finish();
     }
 
     @OnClick(R.id.sign_up_here)

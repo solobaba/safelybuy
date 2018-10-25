@@ -3,7 +3,6 @@ package com.nuturetech.safelybuy.activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 
 import com.nuturetech.safelybuy.R;
 
@@ -25,6 +24,12 @@ public class SignUpActivity extends AppCompatActivity {
     @OnClick(R.id.btn_login)
     public void goToLogin(){
         startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+        finish();
+    }
+
+    @OnClick(R.id.sign_up_here)
+    public void goToDashboard(){
+        startActivity(new Intent(SignUpActivity.this, NavigationActivity.class));
         finish();
     }
 

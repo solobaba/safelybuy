@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".fragment.OrderProductsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardView"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            app:cardBackgroundColor="#E0E0E0"
+                            app:cardCornerRadius="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cart_food" />
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/cart_text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="AFNAN Supremacy"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+                        <TextView
+                            android:id="@+id/cart_amount_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="₦12,500 - ₦14,500"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_text_1" />
+
+                        <TextView
+                            android:id="@+id/cart_category_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="Categories"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_amount_1" />
+
+                        <TextView
+                            android:id="@+id/cart_catetext_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="Clothings"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/ubuntu"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_category_1" />
+
+                        <TextView
+                            android:id="@+id/order_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="#Order:"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_catetext_1" />
+
+                        <TextView
+                            android:id="@+id/order_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="2355443"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/ubuntu"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/cardView"
+                            app:layout_constraintTop_toBottomOf="@+id/order_number" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/cart_cancel"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraint_card_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="7dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardView_2"
+                            android:layout_width="120dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            app:cardBackgroundColor="#E0E0E0"
+                            app:cardCornerRadius="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="105dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/cart_food" />
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/cart_text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:text="AFNAN Supremacy"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2" />
+
+                        <TextView
+                            android:id="@+id/cart_amount_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="₦12,500 - ₦14,500"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_text_2" />
+
+                        <TextView
+                            android:id="@+id/cart_category_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="Categories"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_amount_2" />
+
+                        <TextView
+                            android:id="@+id/cart_catetext_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="Clothings"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/ubuntu"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_category_2" />
+
+                        <TextView
+                            android:id="@+id/order_number_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="#Order:"
+                            android:textColor="#9E9E9E"
+                            android:textSize="13sp"
+                            app:fontFamily="@font/ubuntu"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2"
+                            app:layout_constraintTop_toBottomOf="@+id/cart_catetext_2" />
+
+                        <TextView
+                            android:id="@+id/order_no_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"
+                            android:text="2355443"
+                            android:textColor="#4E2796"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/ubuntu"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@+id/cardView_2"
+                            app:layout_constraintTop_toBottomOf="@+id/order_number_2" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/cart_cancel"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.v7.widget.CardView>
+            </android.support.constraint.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_order_products"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/slide_gradient_colour"
+                android:text="Back to Shopping"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/ubuntu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

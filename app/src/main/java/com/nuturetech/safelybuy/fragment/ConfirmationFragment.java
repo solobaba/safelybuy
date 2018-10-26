@@ -22,10 +22,10 @@ import butterknife.Unbinder;
  * Activities that contain this fragment must implement the
  * {@link OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link MessageFragment#newInstance} factory method to
+ * Use the {@link ConfirmationFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MessageFragment extends Fragment {
+public class ConfirmationFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -38,7 +38,7 @@ public class MessageFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
     Unbinder unbinder;
 
-    public MessageFragment() {
+    public ConfirmationFragment() {
         // Required empty public constructor
     }
 
@@ -48,11 +48,11 @@ public class MessageFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MessageFragment.
+     * @return A new instance of fragment ConfirmationFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MessageFragment newInstance(String param1, String param2) {
-        MessageFragment fragment = new MessageFragment();
+    public static ConfirmationFragment newInstance(String param1, String param2) {
+        ConfirmationFragment fragment = new ConfirmationFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -73,8 +73,8 @@ public class MessageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        getActivity().setTitle("Message");
-        View view = inflater.inflate(R.layout.fragment_message, container, false);
+        getActivity().setTitle("Confirmation");
+        View view = inflater.inflate(R.layout.fragment_confirmation, container, false);
         unbinder = ButterKnife.bind(this, view);
         return view;
     }
@@ -93,9 +93,9 @@ public class MessageFragment extends Fragment {
                 .commit();
     }
 
-    @OnClick(R.id.btn_message)
-    public void goToDescription(){
-        clickedOn(new FragmentCartOrder());
+    @OnClick(R.id.btn_confirmation)
+    public void goToOrderCart(){
+        clickedOn(new OrderProductsFragment());
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -114,17 +114,5 @@ public class MessageFragment extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        unbinder.unbind();
     }
 }

@@ -13,7 +13,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,13 +48,13 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
                 app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="7dp"
                 app:cardElevation="7dp">
 
                 <com.nuturetech.safelybuy.activities.SliderLayout
@@ -64,11 +64,6 @@
                     app:auto_cycle="true"
                     app:pager_animation="Accordion"
                     app:pager_animation_span="1100"/>
-
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent"-->
-                    <!--android:src="@drawable/slide_1" />-->
             </android.support.v7.widget.CardView>
 
             <LinearLayout
@@ -117,7 +112,7 @@
             <!--app:layout_constraintGuide_percent="0.38" />-->
 
             <android.support.constraint.ConstraintLayout
-                android:id="@+id/constrant_card_1"
+                android:id="@+id/constraint_card_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
@@ -220,7 +215,7 @@
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
-                android:id="@+id/constrant_card_2"
+                android:id="@+id/constraint_card_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
@@ -327,7 +322,7 @@
             </android.support.constraint.ConstraintLayout>
 
             <android.support.constraint.ConstraintLayout
-                android:id="@+id/constrant_card_3"
+                android:id="@+id/constraint_card_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"

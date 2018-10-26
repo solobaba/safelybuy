@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.nuturetech.safelybuy.R;
 import com.nuturetech.safelybuy.fragment.DashboardFragment;
+import com.nuturetech.safelybuy.fragment.OrderProductsFragment;
 import com.nuturetech.safelybuy.interfaces.OnFragmentInteractionListener;
 
 import butterknife.BindView;
@@ -99,8 +100,7 @@ public class NavigationActivity extends AppCompatActivity implements NavigationV
             //finish();
         }
         if (id == R.id.nav_order){
-            //startActivity(new Intent(this, MainActivity.class));
-            //finish();
+            clickedOn(new OrderProductsFragment());
         }
         if (id == R.id.nav_profile){
             //startActivity(new Intent(this, MainActivity.class));
